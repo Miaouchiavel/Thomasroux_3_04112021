@@ -1,0 +1,12 @@
+h1 {
+  color: yellow !important; }
+  @media screen and (min-width: 768px) {
+    h1 {
+      color: pink; } }
+
+h2 {
+  background-color: red;
+  margin: 5px; }
+
+h1 {
+  color: red; }

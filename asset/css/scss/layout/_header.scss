@@ -1,0 +1,11 @@
+h1 {
+    color: $test !important;
+    @media screen and (min-width: 768px) {
+        color: pink;
+    }
+}
+
+h2 {
+    background-color: red;
+    margin: 5px;
+}
