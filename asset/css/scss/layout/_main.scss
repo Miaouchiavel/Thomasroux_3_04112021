@@ -1,3 +1,7 @@
+ body {
+     margin: 0;
+ }
+ 
  main {
      font-family: $Roboto;
      .local {
@@ -32,6 +36,19 @@
              padding: 3rem 1rem 2rem 1rem;
              margin: 0;
              font-size: 23px;
+         }
+         .fct_object {
+             ol {
+                 display: flex;
+                 box-shadow: 0.25rem 0.25rem 10px #0e0e0e73;
+             }
+             ol li::before {
+                 content: counter(before);
+                 background-color: $primaire;
+                 border-radius: 20 px;
+                 color: #fff;
+                 counter-increment: ope;
+             }
          }
      }
  }

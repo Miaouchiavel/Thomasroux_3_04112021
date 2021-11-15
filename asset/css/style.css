@@ -6,12 +6,15 @@
   padding: 0.5rem;
   margin: 0; }
 
+body {
+  margin: 0; }
+
 main {
   font-family: "Roboto"; }
   main .local {
+    padding: 1rem;
     text-align: center;
     background-color: #e7e7e7;
-    padding: 1rem;
     box-shadow: inset 0 20px 20px -29px rgba(0, 0, 0, 0.8); }
   main .exp {
     background-color: #f2f2f2e3;
@@ -30,3 +33,18 @@ main {
       border-radius: 30px;
       padding: 1rem;
       box-shadow: 0.25rem 0.25rem 10px #0e0e0e73; }
+  main .fct h2 {
+    padding: 3rem 1rem 2rem 1rem;
+    margin: 0;
+    font-size: 23px; }
+  main .fct .fct_object {
+    padding-left: 1rem; }
+    main .fct .fct_object ol {
+      display: flex;
+      box-shadow: 0.25rem 0.25rem 10px #0e0e0e73; }
+    main .fct .fct_object ol li::before {
+      content: counter(before);
+      background-color: #9356DC;
+      border-radius: 20 px;
+      color: #fff;
+      counter-increment: ope; }
