@@ -51,4 +51,33 @@
              }
          }
      }
+     .container {
+         padding: 1rem;
+         background-color: #f2f2f2e3;
+         text-decoration: none;
+         .card_restaurants {
+             display: flex;
+             flex-direction: column;
+             .card {
+                 position: relative;
+                 margin: 15px 0 px;
+                 img {
+                     height: 12rem;
+                     width: 100%;
+                     object-fit: cover;
+                     border-radius: 1rem 1rem 0 0;
+                 }
+                 .card_badge {
+                     background-color: #99e2d0;
+                     color: #1b6150;
+                     padding: 0.5rem;
+                     border-radius: 0.125 rem;
+                     position: absolute;
+                     top: 1rem;
+                     right: 0.75rem;
+                     text-decoration: none;
+                 }
+             }
+         }
+     }
  }

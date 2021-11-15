@@ -37,14 +37,36 @@ main {
     padding: 3rem 1rem 2rem 1rem;
     margin: 0;
     font-size: 23px; }
-  main .fct .fct_object {
-    padding-left: 1rem; }
-    main .fct .fct_object ol {
+  main .fct .fct_object ol {
+    display: flex;
+    box-shadow: 0.25rem 0.25rem 10px #0e0e0e73; }
+  main .fct .fct_object ol li::before {
+    content: counter(before);
+    background-color: #9356DC;
+    border-radius: 20 px;
+    color: #fff;
+    counter-increment: ope; }
+  main .container {
+    padding: 1rem;
+    background-color: #f2f2f2e3;
+    text-decoration: none; }
+    main .container .card_restaurants {
       display: flex;
-      box-shadow: 0.25rem 0.25rem 10px #0e0e0e73; }
-    main .fct .fct_object ol li::before {
-      content: counter(before);
-      background-color: #9356DC;
-      border-radius: 20 px;
-      color: #fff;
-      counter-increment: ope; }
+      flex-direction: column; }
+      main .container .card_restaurants .card {
+        position: relative;
+        margin: 15px 0 px; }
+        main .container .card_restaurants .card img {
+          height: 12rem;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 1rem 1rem 0 0; }
+        main .container .card_restaurants .card .card_badge {
+          background-color: #99e2d0;
+          color: #1b6150;
+          padding: 0.5rem;
+          border-radius: 0.125 rem;
+          position: absolute;
+          top: 1rem;
+          right: 0.75rem;
+          text-decoration: none; }
