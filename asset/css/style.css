@@ -55,7 +55,8 @@ main {
       flex-direction: column; }
       main .container .card_restaurants .card {
         position: relative;
-        margin: 15px 0 px; }
+        margin: 15px 0 px;
+        margin-bottom: 1rem; }
         main .container .card_restaurants .card img {
           height: 12rem;
           width: 100%;
@@ -70,3 +71,8 @@ main {
           top: 1rem;
           right: 0.75rem;
           text-decoration: none; }
+        main .container .card_restaurants .card .card_under {
+          display: flex;
+          justify-content: space-between;
+          background-color: white;
+          margin-top: -4px; }

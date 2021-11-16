@@ -61,6 +61,7 @@
              .card {
                  position: relative;
                  margin: 15px 0 px;
+                 margin-bottom: 1rem;
                  img {
                      height: 12rem;
                      width: 100%;
@@ -76,6 +77,12 @@
                      top: 1rem;
                      right: 0.75rem;
                      text-decoration: none;
+                 }
+                 .card_under {
+                     display: flex;
+                     justify-content: space-between;
+                     background-color: white;
+                     margin-top: -4px;
                  }
              }
          }
