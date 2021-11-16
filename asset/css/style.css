@@ -76,3 +76,13 @@ main {
           justify-content: space-between;
           background-color: white;
           margin-top: -4px; }
+
+.footer {
+  background-color: #354146;
+  padding: 1rem;
+  color: white; }
+  .footer .footer_logo {
+    font-family: "Shrikhand"; }
+  .footer ul li {
+    text-decoration: none;
+    color: white; }
