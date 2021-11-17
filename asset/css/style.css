@@ -41,33 +41,35 @@ main {
       border-radius: 30px;
       padding: 1rem;
       box-shadow: 0.25rem 0.25rem 10px #0e0e0e73; }
-  main .fct h2 {
-    padding: 3rem 1rem 1rem 1rem;
-    margin: 0;
-    font-size: 23px; }
-  main .fct .fct_container .fct_ol {
-    margin: 0;
-    padding-left: 1.75rem;
-    padding-right: 1rem;
-    list-style: none;
-    counter-reset: list-number; }
-    main .fct .fct_container .fct_ol .fct_object {
-      padding: 1.5rem;
-      margin: 1rem 0 1rem 0;
-      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.152);
-      border-radius: 1rem;
-      background-color: #f6f6f6;
-      position: relative; }
-    main .fct .fct_container .fct_ol .fct_object::before {
-      counter-increment: list-number;
-      content: counter(list-number);
-      background-color: #9356DC;
-      height: 1.5rem;
-      width: 1.5rem;
-      border-radius: 50%;
-      color: #fff;
-      position: absolute;
-      left: -0.75rem; }
+  main .fct {
+    margin-bottom: 3.5rem; }
+    main .fct h2 {
+      padding: 3rem 1rem 1rem 1rem;
+      margin: 0;
+      font-size: 23px; }
+    main .fct .fct_container .fct_ol {
+      margin: 0;
+      padding-left: 1.75rem;
+      padding-right: 1rem;
+      list-style: none;
+      counter-reset: list-number; }
+      main .fct .fct_container .fct_ol .fct_object {
+        padding: 1.5rem;
+        margin: 1rem 0 1rem 0;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.152);
+        border-radius: 1rem;
+        background-color: #f6f6f6;
+        position: relative; }
+      main .fct .fct_container .fct_ol .fct_object::before {
+        counter-increment: list-number;
+        content: counter(list-number);
+        background-color: #9356DC;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        color: #fff;
+        position: absolute;
+        left: -0.75rem; }
   main .container {
     padding: 1rem;
     background-color: #f2f2f2e3;
@@ -84,7 +86,7 @@ main {
         box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.289);
         border-radius: 1rem; }
         main .container .card_restaurants .card img {
-          height: 12rem;
+          height: 11rem;
           width: 100%;
           object-fit: cover;
           border-radius: 1rem 1rem 0 0; }
