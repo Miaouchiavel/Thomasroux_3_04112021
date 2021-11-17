@@ -137,7 +137,8 @@ main {
     padding: 1rem; }
     .container_menu .submenu h3 {
       text-decoration: underline 4px #99E2D0;
-      font-weight: lighter; }
+      font-weight: lighter;
+      margin-top: 0; }
     .container_menu .submenu .submenu_card {
       display: flex;
       justify-content: space-between;
