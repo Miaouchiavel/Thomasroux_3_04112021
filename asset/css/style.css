@@ -4,8 +4,9 @@ header {
   position: relative; }
   header .return {
     position: absolute;
-    vertical-align: middle;
-    left: 1rem; }
+    top: 1.5rem;
+    left: 1rem;
+    color: black; }
   header .header_logo {
     text-align: center;
     font-family: "Shrikhand";
@@ -118,9 +119,29 @@ main {
 
 .container_menu {
   width: 100%;
-  border-radius: 20px;
-  background-color: green;
-  padding-top: -1rem; }
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  display: block; }
+  .container_menu .menu_title {
+    display: flex;
+    justify-content: space-between; }
+    .container_menu .menu_title h2 {
+      margin: 0; }
+  .container_menu .submenu {
+    padding: 1rem; }
+    .container_menu .submenu h3 {
+      text-decoration: underline #99E2D0; }
+    .container_menu .submenu .submenu_card {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 1rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.289); }
+      .container_menu .submenu .submenu_card .submenu_title {
+        margin: 0; }
 
 .footer {
   background-color: #292929e9;
