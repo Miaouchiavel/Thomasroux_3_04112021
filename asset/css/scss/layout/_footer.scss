@@ -1,12 +1,22 @@
-.footer {
-    background-color: #354146;
-    padding: 1rem;
-    color: white;
-    .footer_logo {
-        font-family: $Shrikhand;
-    }
-    ul li {
-        text-decoration: none;
+    .footer {
+        background-color: #292929e9;
+        padding: 1rem;
         color: white;
+        .footer_logo {
+            font-family: $Shrikhand;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            a {
+                text-decoration: none;
+                color: white;
+                .footer_bold .footer_light {
+                    padding-bottom: 1rem;
+                    .sticker {
+                        padding-right: 1rem;
+                    }
+                }
+            }
+        }
     }
-}

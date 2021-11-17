@@ -33,21 +33,28 @@
      }
      .fct {
          h2 {
-             padding: 3rem 1rem 2rem 1rem;
+             padding: 3rem 1rem 1rem 1rem;
              margin: 0;
              font-size: 23px;
          }
-         .fct_object {
-             ol {
-                 display: flex;
-                 box-shadow: 0.25rem 0.25rem 10px #0e0e0e73;
-             }
-             ol li::before {
-                 content: counter(before);
-                 background-color: $primaire;
-                 border-radius: 20 px;
-                 color: #fff;
-                 counter-increment: ope;
+         .fct_container {
+             .fct_ol {
+                 margin: 0;
+                 padding: 1rem;
+                 .fct_object {
+                     padding: 1.5rem;
+                     margin: 1rem 0 1rem 0;
+                     box-shadow: 0 5px 40px -27px rgb(0, 0, 0);
+                     border-radius: 1rem;
+                     background-color: #f6f6f6;
+                     ol li::before {
+                         content: counter(before);
+                         background-color: $primaire;
+                         border-radius: 20 px;
+                         color: #fff;
+                         counter-increment: ope;
+                     }
+                 }
              }
          }
      }
@@ -62,6 +69,10 @@
                  position: relative;
                  margin: 15px 0 px;
                  margin-bottom: 1rem;
+                 text-decoration: none;
+                 color: black;
+                 box-shadow: 0 5px 40px -27px rgba(0, 0, 0, 0.289);
+                 border-radius: 1rem;
                  img {
                      height: 12rem;
                      width: 100%;
@@ -72,7 +83,6 @@
                      background-color: #99e2d0;
                      color: #1b6150;
                      padding: 0.5rem;
-                     border-radius: 0.125 rem;
                      position: absolute;
                      top: 1rem;
                      right: 0.75rem;
@@ -83,6 +93,23 @@
                      justify-content: space-between;
                      background-color: white;
                      margin-top: -4px;
+                     padding: 1rem;
+                     border-radius: 0 0 1rem 1rem;
+                     .card_info {
+                         h3 {
+                             margin: 0;
+                             font-weight: 500;
+                         }
+                         span {
+                             font-weight: lighter;
+                         }
+                         .heart {
+                             display: flex;
+                             align-items: center;
+                             font-size: 16px;
+                             .heart_icon {}
+                         }
+                     }
                  }
              }
          }
