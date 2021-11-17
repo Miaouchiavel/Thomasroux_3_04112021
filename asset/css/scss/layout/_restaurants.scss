@@ -10,17 +10,20 @@
     border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
     display: block;
+    font-family: $Roboto;
     .menu_title {
         display: flex;
         justify-content: space-between;
         h2 {
             margin: 0;
+            font-family: $Shrikhand;
         }
     }
     .submenu {
         padding: 1rem;
         h3 {
-            text-decoration: underline $tertiaire;
+            text-decoration: underline 4px $tertiaire;
+            font-weight: lighter;
         }
         .submenu_card {
             display: flex;
@@ -32,6 +35,11 @@
             box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.289);
             .submenu_title {
                 margin: 0;
+                font-weight: 500;
+            }
+            .submenu_subtitle {
+                font-weight: lighter;
+                font-size: 15px;
             }
         }
     }
