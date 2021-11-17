@@ -45,19 +45,27 @@ main {
     font-size: 23px; }
   main .fct .fct_container .fct_ol {
     margin: 0;
-    padding: 1rem; }
+    padding-left: 1.75rem;
+    padding-right: 1rem;
+    list-style: none;
+    counter-reset: list-number; }
     main .fct .fct_container .fct_ol .fct_object {
       padding: 1.5rem;
       margin: 1rem 0 1rem 0;
-      box-shadow: 0 5px 40px -27px black;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.152);
       border-radius: 1rem;
-      background-color: #f6f6f6; }
-      main .fct .fct_container .fct_ol .fct_object ol li::before {
-        content: counter(before);
-        background-color: #9356DC;
-        border-radius: 20 px;
-        color: #fff;
-        counter-increment: ope; }
+      background-color: #f6f6f6;
+      position: relative; }
+    main .fct .fct_container .fct_ol .fct_object::before {
+      counter-increment: list-number;
+      content: counter(list-number);
+      background-color: #9356DC;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      color: #fff;
+      position: absolute;
+      left: -0.75rem; }
   main .container {
     padding: 1rem;
     background-color: #f2f2f2e3;
@@ -71,7 +79,7 @@ main {
         margin-bottom: 1rem;
         text-decoration: none;
         color: black;
-        box-shadow: 0 5px 40px -27px rgba(0, 0, 0, 0.289);
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.289);
         border-radius: 1rem; }
         main .container .card_restaurants .card img {
           height: 12rem;
@@ -103,6 +111,17 @@ main {
             align-items: center;
             font-size: 16px; }
 
+.menu_img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover; }
+
+.container_menu {
+  width: 100%;
+  border-radius: 20px;
+  background-color: green;
+  padding-top: -1rem; }
+
 .footer {
   background-color: #292929e9;
   padding: 1rem;
@@ -115,7 +134,3 @@ main {
     .footer ul a {
       text-decoration: none;
       color: white; }
-      .footer ul a .footer_bold .footer_light {
-        padding-bottom: 1rem; }
-        .footer ul a .footer_bold .footer_light .sticker {
-          padding-right: 1rem; }
