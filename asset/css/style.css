@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
-@mixins 'button' {}
+@mixins button_global {}
 header {
   position: relative; }
   header .return {
@@ -126,7 +126,8 @@ main {
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   display: block;
-  font-family: "Roboto"; }
+  font-family: "Roboto";
+  z-index: 1; }
   .container_menu .menu_title {
     display: flex;
     justify-content: space-between; }
@@ -184,3 +185,7 @@ main {
         text-decoration: none;
         color: white;
         padding-bottom: 1rem; }
+      .footer ul .footer_link .sticker {
+        width: 20px;
+        height: 20px;
+        padding-right: 0.5rem; }
