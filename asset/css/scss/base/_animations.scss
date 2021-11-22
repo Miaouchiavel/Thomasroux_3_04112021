@@ -17,3 +17,12 @@
                 color: red;
             }
         }
+        
+        @keyframes menu_check {
+            from {
+                width: 0;
+            }
+            to {
+                width: 70px;
+            }
+        }
