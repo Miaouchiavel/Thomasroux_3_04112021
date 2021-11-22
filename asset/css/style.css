@@ -13,8 +13,8 @@
     color: black; }
   to {
     color: red; } }
-.fas .fa-heart {
-  display: none; }
+.fasfa-heart {
+  background-color: red; }
 
 header {
   position: relative; }
