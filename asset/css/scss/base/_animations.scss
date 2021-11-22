@@ -1,18 +1,19 @@
         @keyframes fade_in {
-        from {
-            transform: translateY(1rem);
-            opacity: 0;
+            from {
+                transform: translateY(1rem);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes heart_anim {
-        from {
-            color: black;
-        }
-        to {
-            color: red;
+        
+        @keyframes heart_anim {
+            from {
+                color: black;
+            }
+            to {
+                color: red;
+            }
         }
