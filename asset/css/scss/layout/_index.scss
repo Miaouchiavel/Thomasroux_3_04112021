@@ -52,6 +52,18 @@
                      border-radius: 1rem;
                      background-color: #f6f6f6;
                      position: relative;
+                     .fct_ast {
+                         width: 20px;
+                         height: 20px;
+                         padding-right: 0.5rem
+                     }
+                 }
+                 .fct_object:hover {
+                     background-color: #9256dc33;
+                     color: $primaire;
+                     i {
+                         color: $primaire;
+                     }
                  }
                  .fct_object::before {
                      counter-increment: list-number;
@@ -63,6 +75,8 @@
                      color: #fff;
                      position: absolute;
                      left: -0.75rem;
+                     display: flex;
+                     justify-content: center;
                  }
              }
          }
