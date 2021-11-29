@@ -130,28 +130,28 @@ main {
         border-radius: 1rem;
         background-color: #f6f6f6;
         position: relative; }
-        main .fct .fct_container .fct_ol .fct_object .fct_ast {
-          width: 20px;
-          height: 20px;
-          padding-right: 0.5rem; }
-      main .fct .fct_container .fct_ol .fct_object:hover {
-        background-color: #9256dc33;
+      main .fct .fct_container .fct_ol .fct_ast {
+        width: 20px;
+        height: 20px;
+        padding-right: 0.5rem; }
+    main .fct .fct_container .fct_object:hover {
+      background-color: #9256dc33;
+      color: #9356DC; }
+      main .fct .fct_container .fct_object:hover i {
         color: #9356DC; }
-        main .fct .fct_container .fct_ol .fct_object:hover i {
-          color: #9356DC; }
-      main .fct .fct_container .fct_ol .fct_object::before {
-        counter-increment: list-number;
-        content: counter(list-number);
-        background-color: #9356DC;
-        height: 1.5rem;
-        width: 1.5rem;
-        border-radius: 50%;
-        color: #fff;
-        position: absolute;
-        left: -0.75rem;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
+    main .fct .fct_container .fct_object::before {
+      counter-increment: list-number;
+      content: counter(list-number);
+      background-color: #9356DC;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      color: #fff;
+      position: absolute;
+      left: -0.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   main .container {
     padding: 1rem;
     background-color: #f2f2f2e3;
