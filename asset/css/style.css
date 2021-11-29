@@ -18,6 +18,29 @@
     width: 0; }
   to {
     width: 70px; } }
+.heart {
+  position: relative;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .heart .heart_icon {
+    position: absolute; }
+  .heart .heart_full {
+    opacity: 0;
+    background: linear-gradient(#FF79DA, #9356DC); }
+
+.heart:hover .fa-heart {
+  opacity: 1;
+  transform: scale(1.1);
+  display: block;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition-duration: 500ms; }
+
 header {
   position: relative; }
   header .return {
@@ -97,7 +120,8 @@ main {
         position: absolute;
         left: -0.75rem;
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        align-items: center; }
   main .container {
     padding: 1rem;
     background-color: #f2f2f2e3;

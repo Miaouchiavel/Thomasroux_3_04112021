@@ -1,28 +1,58 @@
-        @keyframes fade_in {
-            from {
-                transform: translateY(1rem);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+    @keyframes fade_in {
+        from {
+            transform: translateY(1rem);
+            opacity: 0;
         }
-        
-        @keyframes heart_anim {
-            from {
-                color: black;
-            }
-            to {
-                color: red;
-            }
+        to {
+            transform: translateY(0);
+            opacity: 1;
         }
-        
-        @keyframes menu_check {
-            from {
-                width: 0;
-            }
-            to {
-                width: 70px;
-            }
+    }
+    
+    @keyframes heart_anim {
+        from {
+            color: black;
         }
+        to {
+            color: red;
+        }
+    }
+    
+    @keyframes menu_check {
+        from {
+            width: 0;
+        }
+        to {
+            width: 70px;
+        }
+    }
+    
+    //Animation heart button
+    .heart {
+        position: relative;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .heart_icon {
+            position: absolute;
+        }
+        .heart_full {
+            opacity: 0;
+            background: linear-gradient($secondaire, $primaire);
+        }
+    }
+    
+    .heart:hover {
+        .fa-heart {
+            opacity: 1;
+            transform: scale(1.1);
+            display: block;
+            background: -webkit-linear-gradient($secondaire, $primaire);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            transition-duration: 500ms;
+        }
+    }
