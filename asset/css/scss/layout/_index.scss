@@ -29,6 +29,9 @@
              border-radius: 30px;
              padding: 1rem;
              box-shadow: 0.25rem 0.25rem 10px #0e0e0e73;
+             &:hover {
+                 opacity: 0.8;
+             }
          }
      }
      .fct {

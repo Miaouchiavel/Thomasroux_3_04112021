@@ -79,6 +79,7 @@
                                 align-items: end;
                             }
                         }
+                        // anim_check
                         .menu_green {
                             opacity: 0;
                             display: flex;
@@ -94,7 +95,7 @@
                                 width: 25px;
                                 font-size: 20px;
                                 transform: rotate( -380deg);
-                                transition-duration: 1s;
+                                transition-duration: 0.6s;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -105,7 +106,7 @@
                             display: flex;
                             .menu_green {
                                 opacity: 1;
-                                animation: menu_check 0.7s ease-in-out forwards;
+                                animation: menu_check 0.4s ease-in-out forwards;
                                 i {
                                     transform: rotate(0);
                                     width: 10px;
@@ -120,7 +121,7 @@
                     justify-content: center;
                     padding: 1rem 0rem 3rem 0rem;
                     .button {
-                        margin: 1rem 1rem 1rem 1rem;
+                        margin: 1rem;
                         text-decoration: none;
                         color: white;
                         background: linear-gradient($secondaire, $primaire);
@@ -128,6 +129,9 @@
                         padding: 0.75rem 2rem;
                         box-shadow: 0.25rem 0.25rem 10px #0e0e0e73;
                         justify-self: center;
+                        &:hover {
+                            opacity: 0.8;
+                        }
                     }
                 }
             }
