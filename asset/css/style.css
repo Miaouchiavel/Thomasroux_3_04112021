@@ -8,16 +8,11 @@
   to {
     transform: translateY(0);
     opacity: 1; } }
-@keyframes heart_anim {
-  from {
-    color: black; }
-  to {
-    color: red; } }
 @keyframes menu_check {
   from {
     width: 0; }
   to {
-    width: 70px; } }
+    width: 80px; } }
 .heart {
   position: relative;
   height: 32px;
@@ -212,29 +207,59 @@ main {
       .container_menu .submenu .submenu_card .submenu_info {
         display: flex;
         padding: 1rem;
-        justify-content: space-between; }
-        .container_menu .submenu .submenu_card .submenu_info .submenu_title {
-          margin: 0;
-          font-weight: 500; }
-        .container_menu .submenu .submenu_card .submenu_info .submenu_subtitle {
-          font-weight: lighter;
-          font-size: 15px; }
+        justify-content: space-between;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        .container_menu .submenu .submenu_card .submenu_info .sub_text {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+          .container_menu .submenu .submenu_card .submenu_info .sub_text .submenu_title {
+            margin: 0;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .container_menu .submenu .submenu_card .submenu_info .sub_text .submenu_subtitle {
+            font-weight: lighter;
+            font-size: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
         .container_menu .submenu .submenu_card .submenu_info .submenu_prix {
           display: flex;
           bottom: 1rem;
           right: 1rem;
           align-items: end; }
       .container_menu .submenu .submenu_card .menu_green {
+        opacity: 0;
         display: flex;
-        background-color: green;
+        align-items: center;
+        justify-content: center;
+        background-color: #99E2D0;
+        border-radius: 0 1rem 1rem 0;
+        overflow: hidden;
         width: 0; }
         .container_menu .submenu .submenu_card .menu_green i {
           margin: auto;
           color: white;
           width: 25px;
-          font-size: 20px; }
-      .container_menu .submenu .submenu_card:hover .menu_green {
-        animation: menu_check 1s ease-in-out forwards; }
+          font-size: 20px;
+          transform: rotate(-380deg);
+          transition-duration: 1s;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+      .container_menu .submenu .submenu_card:hover {
+        display: flex; }
+        .container_menu .submenu .submenu_card:hover .menu_green {
+          opacity: 1;
+          animation: menu_check 0.7s ease-in-out forwards; }
+          .container_menu .submenu .submenu_card:hover .menu_green i {
+            transform: rotate(0);
+            width: 10px; }
   .container_menu .div_button {
     display: flex;
     text-decoration: none;
