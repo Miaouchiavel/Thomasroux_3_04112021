@@ -1,52 +1,99 @@
-    //animation_menu_resto
-    @keyframes fade_in {
-        from {
-            transform: translateY(1rem);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-    
-    // animations check
-    @keyframes menu_check {
-        from {
-            width: 0;
-        }
-        to {
-            width: 80px;
-        }
-    }
-    
-    //button hoover
-    //Animation heart button
-    .heart {
-        position: relative;
-        height: 32px;
-        width: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .heart_icon {
-            position: absolute;
-        }
-        .heart_full {
-            opacity: 0;
-            background: linear-gradient($secondaire, $primaire);
-        }
-    }
-    
-    .heart:hover {
-        .fa-heart {
-            opacity: 1;
-            transform: scale(1.1);
-            display: block;
-            background: -webkit-linear-gradient($secondaire, $primaire);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            transition-duration: 500ms;
-        }
-    }
+                //animation_menu_resto
+                @keyframes fade_in {
+                    from {
+                        transform: translateY(1rem);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+                
+                // animations check
+                @keyframes menu_check {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 80px;
+                    }
+                }
+                
+                //button hoover
+                //Animation heart button
+                .heart {
+                    position: relative;
+                    height: 32px;
+                    width: 32px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .heart_icon {
+                        position: absolute;
+                    }
+                    .heart_full {
+                        opacity: 0;
+                        background: linear-gradient($secondaire, $primaire);
+                    }
+                }
+                
+                .heart:hover {
+                    .fa-heart {
+                        opacity: 1;
+                        transform: scale(1.1);
+                        display: block;
+                        background: -webkit-linear-gradient($secondaire, $primaire);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                        transition-duration: 500ms;
+                    }
+                }
+                
+                //loader
+                @keyframes fade_out {
+                    99% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+                
+                @keyframes loader {
+                    100% {
+                        transform: translateY(-30px);
+                    }
+                }
+                
+                .loader {
+                    height: 100%;
+                    width: 100%;
+                    background: white;
+                    position: fixed;
+                    z-index: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    animation: fade_out 2.5s ease-in-out forwards;
+                    .dot {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        margin: 0 15px;
+                        animation: loader infinite 0.3s alternate;
+                    }
+                    .d1 {
+                        background: $primaire
+                    }
+                    .d2 {
+                        animation-delay: 0.1s;
+                        background: $secondaire
+                    }
+                    .d3 {
+                        animation-delay: 0.2s;
+                        background: $tertiaire
+                    }
+                }
