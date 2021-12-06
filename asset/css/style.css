@@ -18,7 +18,8 @@
   width: 32px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
   .heart .heart_icon {
     position: absolute; }
   .heart .heart_full {
@@ -123,6 +124,11 @@ main {
       padding-right: 1rem;
       list-style: none;
       counter-reset: list-number; }
+      @media screen and (min-width: 700px) {
+        main .fct .fct_container .fct_ol {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 0 !important; } }
       main .fct .fct_container .fct_ol .fct_object {
         padding: 1.5rem;
         margin: 1rem 0 1rem 0;
@@ -135,6 +141,7 @@ main {
         height: 20px;
         padding-right: 0.5rem; }
     main .fct .fct_container .fct_object:hover {
+      cursor: pointer;
       background-color: #9256dc33;
       color: #9356DC; }
       main .fct .fct_container .fct_object:hover i {
@@ -156,12 +163,21 @@ main {
     padding: 1rem;
     background-color: #f2f2f2e3;
     text-decoration: none; }
+    @media screen and (min-width: 700px) {
+      main .container .card_restaurants {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1200px;
+        margin: auto; }
+        main .container .card_restaurants a {
+          width: 45%;
+          margin: 0.5rem !important; } }
     main .container .card_restaurants {
       display: flex;
       flex-direction: column; }
       main .container .card_restaurants .card {
         position: relative;
-        margin: 15px 0 px;
         margin-bottom: 1rem;
         text-decoration: none;
         color: black;
@@ -221,15 +237,16 @@ main {
       font-family: "Shrikhand"; }
   .container_menu .submenu {
     padding: 1rem; }
-    .container_menu .submenu h3 {
+    .container_menu .submenu .title_menu h3 {
       font-weight: lighter;
       margin-top: 0;
-      position: relative; }
-      .container_menu .submenu h3 hr {
-        position: absolute;
-        width: 30px;
-        border: 1px solid #99E2D0;
-        margin: 0; }
+      position: relative;
+      margin-bottom: 1rem; }
+    .container_menu .submenu .title_menu hr {
+      position: absolute;
+      width: 30px;
+      border: 1px solid #99E2D0;
+      margin-top: -1rem; }
     .container_menu .submenu .submenu_card {
       width: 100%;
       display: flex;
@@ -238,7 +255,7 @@ main {
       border-radius: 1rem;
       margin-bottom: 1rem;
       box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.289);
-      animation: fade_in 3000ms ease 0s 1 normal forwards; }
+      animation: fade_in 1.5s ease 0s 1 normal forwards; }
       .container_menu .submenu .submenu_card .submenu_info {
         display: flex;
         padding: 1rem;
@@ -276,7 +293,8 @@ main {
         background-color: #99E2D0;
         border-radius: 0 1rem 1rem 0;
         overflow: hidden;
-        width: 0; }
+        width: 0;
+        cursor: pointer; }
         .container_menu .submenu .submenu_card .menu_green i {
           margin: auto;
           color: white;

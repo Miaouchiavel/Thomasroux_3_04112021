@@ -25,15 +25,18 @@
                 }
                 .submenu {
                     padding: 1rem;
-                    h3 {
-                        font-weight: lighter;
-                        margin-top: 0;
-                        position: relative;
+                    .title_menu {
+                        h3 {
+                            font-weight: lighter;
+                            margin-top: 0;
+                            position: relative;
+                            margin-bottom: 1rem;
+                        }
                         hr {
                             position: absolute;
                             width: 30px;
                             border: 1px solid $tertiaire;
-                            margin: 0;
+                            margin-top: -1rem;
                         }
                     }
                     .submenu_card {
@@ -44,7 +47,7 @@
                         border-radius: 1rem;
                         margin-bottom: 1rem;
                         box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.289);
-                        animation: fade_in 3000ms ease 0s 1 normal forwards;
+                        animation: fade_in 1.5s ease 0s 1 normal forwards;
                         .submenu_info {
                             display: flex;
                             padding: 1rem;
@@ -89,6 +92,7 @@
                             border-radius: 0 1rem 1rem 0;
                             overflow: hidden;
                             width: 0;
+                            cursor: pointer;
                             i {
                                 margin: auto;
                                 color: white;
