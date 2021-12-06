@@ -351,7 +351,11 @@ main {
     .footer div {
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center; }
+      .footer div ul {
+        display: inherit;
+        width: 80%;
+        justify-content: space-around; } }
   .footer .footer_logo {
     font-family: "Shrikhand"; }
   .footer ul {
