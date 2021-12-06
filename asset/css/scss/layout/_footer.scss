@@ -2,6 +2,13 @@
     background-color: #292929e9;
     padding: 1rem;
     color: white;
+    @media screen and (min-width: 780px) {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     .footer_logo {
         font-family: $Shrikhand;
     }

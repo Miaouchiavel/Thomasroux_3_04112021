@@ -215,10 +215,23 @@ main {
 
 .menu_img {
   width: 100%;
-  height: 18rem;
+  max-height: 30rem;
   object-fit: cover;
   z-index: 0; }
 
+@media screen and (min-width: 1162px) {
+  .container_menu {
+    width: 90% !important;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto; }
+    .container_menu .box_menu {
+      display: flex;
+      justify-content: center; }
+      .container_menu .box_menu .submenu_card {
+        max-width: 350px;
+        min-width: 350px; } }
 .container_menu {
   width: 100%;
   margin-top: -4rem;
@@ -334,6 +347,11 @@ main {
   background-color: #292929e9;
   padding: 1rem;
   color: white; }
+  @media screen and (min-width: 780px) {
+    .footer div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .footer .footer_logo {
     font-family: "Shrikhand"; }
   .footer ul {

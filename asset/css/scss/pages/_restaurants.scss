@@ -1,8 +1,26 @@
             .menu_img {
                 width: 100%;
-                height: 18rem;
+                max-height: 30rem;
                 object-fit: cover;
                 z-index: 0;
+            }
+            
+            @media screen and (min-width: 1162px) {
+                .container_menu {
+                    width: 90% !important;
+                    display: flex !important;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: auto;
+                    .box_menu {
+                        display: flex;
+                        justify-content: center;
+                        .submenu_card {
+                            max-width: 350px;
+                            min-width: 350px;
+                        }
+                    }
+                }
             }
             
             .container_menu {
