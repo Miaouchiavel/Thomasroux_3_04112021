@@ -10,6 +10,42 @@
                     }
                 }
                 
+                .delay_1 {
+                    animation-delay: 0.2s !important;
+                }
+                
+                .delay_2 {
+                    animation-delay: 0.3s !important;
+                }
+                
+                .delay_3 {
+                    animation-delay: 0.4s !important;
+                }
+                
+                .delay_4 {
+                    animation-delay: 0.5s !important;
+                }
+                
+                .delay_5 {
+                    animation-delay: 0.6s !important;
+                }
+                
+                .delay_6 {
+                    animation-delay: 0.7s !important;
+                }
+                
+                .delay_7 {
+                    animation-delay: 0.8s !important;
+                }
+                
+                .delay_8 {
+                    animation-delay: 0.9s !important;
+                }
+                
+                .delay_9 {
+                    animation-delay: 0.9s !important;
+                }
+                
                 // animations check
                 @keyframes menu_check {
                     from {
@@ -41,7 +77,6 @@
                 .heart:hover {
                     .fa-heart {
                         opacity: 1;
-                        transform: scale(1.1);
                         display: block;
                         background: -webkit-linear-gradient($secondaire, $primaire);
                         background-clip: text;
@@ -49,6 +84,10 @@
                         -webkit-background-clip: text;
                         transition-duration: 500ms;
                     }
+                }
+                
+                .fa-heart {
+                    font-size: 1.5em;
                 }
                 
                 //loader
