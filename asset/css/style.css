@@ -171,8 +171,7 @@ main {
         padding-right: 0.5rem; }
     main .fct .fct_container .fct_object:hover {
       cursor: pointer;
-      background-color: #9256dc33;
-      color: #9356DC; }
+      background-color: #9256dc33; }
       main .fct .fct_container .fct_object:hover i {
         color: #9356DC; }
     main .fct .fct_container .fct_object::before {
